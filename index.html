@@ -1,74 +1,77 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="icon" href="favicon.ico">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a>
+  <body class="body-page">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Нёрдс">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="blank.html">Студия</a></li>
           <li><a href="blank.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="blank.html">Контакты</a></li>
-          <li><img src="img/cart-icon.svg" alt="Корзина"><a href="blank.html">Корзина</a></li>
+          <li>
+            <img src="img/cart-icon.svg" alt="Корзина">
+            <a class="cart" href="blank.html">Корзина</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="wrapper">
       <h1>Дизайн-студия "Нердс"</h1>
-      <section>
+      <section class="features">
         <h2>Преимущества</h2>
-        <div>
+        <div class="feature-slider">
           <h3>Долго, дорого, скрупулезно.</h3>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
         </div>
-        <a href="#">УЗНАТЬ БОЛЬШЕ</a>
-        <div>
+        <a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+        <div class="feature-img">
           <img src="img/nerds-index-slide1-1.png" width="760" height="431" alt="Слайдер">
         </div>
       </section>
-      <section>
+      <section class="service">
         <h2>Услуги</h2>
-        <div>
+        <div class="service-websites">
           <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
           <h3>ВЕБ-САЙТЫ</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#">ЗАКАЗАТЬ</a>
+          <a class="button" href="#">ЗАКАЗАТЬ</a>
         </div>
-        <div>
+        <div class="service-apps">
           <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
           <h3>ПРИЛОЖЕНИЯ</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#">ЗАКАЗАТЬ</a>
+          <a class="button green" href="#">ЗАКАЗАТЬ</a>
         </div>
-        <div>
+        <div class="service-presentation">
           <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
           <h3>ПРЕЗЕНТАЦИИ</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="#">ЗАКАЗАТЬ</a>
+          <a class="button yellow" href="#">ЗАКАЗАТЬ</a>
         </div>
       </section>
-      <section>
+      <section class="about">
         <h2>О нас</h2>
-        <div>
+        <div class="about-description">
           <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p>
             ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:
             <ul>
-              <li><img src="https://via.placeholder.com/25x2" width="25" height="2" alt="">Веб-сайтов любой сложности</li>
-              <li><img src="https://via.placeholder.com/25x2" width="25" height="2" alt="">Мобильных приложений для iOS и Android</li>
-              <li><img src="https://via.placeholder.com/25x2" width="25" height="2" alt="">Слайдшоу и видео для корпоративных презентаций</li>
+              <li><img class="hyphen-img" src="https://via.placeholder.com/25x2" width="25" height="2" alt="">Веб-сайтов любой сложности</li>
+              <li><img class="hyphen-img" src="https://via.placeholder.com/25x2" width="25" height="2" alt="">Мобильных приложений для iOS и Android</li>
+              <li><img class="hyphen-img" src="https://via.placeholder.com/25x2" width="25" height="2" alt="">Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </p>
         </div>
-        <div>
+        <div class="about-numbers">
           <img src="img/nerds-illustration.png" width="360" height="208" alt="Нёрдс">
           <p>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ</p>
           <div>
@@ -85,42 +88,42 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="partners">
         <h2>Партнеры</h2>
-        <div>
+        <div class="partners-logo">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-htmlacademy.png" width="209" height="90" alt="Htmlacademy">
           </a>
         </div>
-        <div>
+        <div class="partners-logo">
           <a href="#">
             <img src="img/logo-borodinski.png" width="209" height="90" alt="Барбершоп Бородинский">
           </a>
         </div>
-        <div>
+        <div class="partners-logo">
           <a href="#">
             <img src="img/logo-pink.png" width="185" height="52" alt="Pink">
           </a>
         </div>
-        <div>
+        <div class="partners-logo">
           <a href="#">
             <img src="img/logo-mishka.png" width="173" height="84" alt="Mishka">
           </a>
         </div>
       </section>
-      <section>
+      <section class="form">
         <h2>Форма записи</h2>
         <img src="img/map.png" width="1440" height="416" alt="Карта">
-        <div>
+        <div class="form-record">
           <p>NЁRDS DESIGN STUDIO</p>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
           <button type="button">НАПИШИТЕ НАМ</button>
         </div>
-        <img src="img/map-marker.png" width="231" height="190" alt="Маркер">
+        <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
       </section>
       <!--Окно формы обратной связи-->
-      <div>
+      <div class="modal">
         <strong>Напишите нам</strong>
         <img src="https://via.placeholder.com/21x21" width="21" height="21" alt="">
         <form action="https://echo.htmlacademy.ru" method="get">
@@ -133,7 +136,7 @@
           <label> Текст письма:
             <textarea name="letter" id="form-letter" rows="5" placeholder="В свободной форме"></textarea>
           </label>
-          <input type="submit" value="Отправить">
+          <input class="button" type="submit" value="Отправить">
         </form>
       </div>
     </main>
