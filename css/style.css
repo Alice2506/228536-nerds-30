@@ -1,0 +1,48 @@
+/* Variables */
+
+:root {
+  --basic-text: #283136;
+  --button-text: #ffffff;
+  --basic-headings: #000000;
+  --basic-background: #eeeeee;
+  --button-background: #FB565A;
+  --green-button-background: #00CA74;
+  --yellow-button-background: #EFC849;
+  --contacts-text: #666666;
+  --footer-text: #444444;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-text);
+  }
+
+a {
+  text-decoration: none;
+}
+
+/* Main navigation */
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-headings);
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.main-navigation-wrapper {
+  background-color: var(--basic-black);
+}
+
+
+.site-navigation {
+    list-style: none;
+  }
