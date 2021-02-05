@@ -29,6 +29,16 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
 /* Header */
 .main-header {
   background-color: var(--basic-background);
@@ -76,6 +86,68 @@ a {
 
 /* section-features */
 .features {
+  background-color: var(--basic-background);
+}
+
+.feature-slider h3 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.button {
+  color: var(--button-text);
+  background-color: var(--button-background);
+  text-transform: uppercase;
+}
+
+.green {
+  background-color: var(--green-button-background);
+}
+
+.yellow {
+  background-color: var(--yellow-button-background);
+}
+
+/* section-about us*/
+
+.about-description h3 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--basic-headings);
+}
+
+.about-description span {
+  font-weight: 700;
+}
+
+.about-numbers span {
+  font-weight: 700;
+  color: var(--basic-headings);
+}
+
+.numbers {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.numbers span {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/* section-form*/
+.form-heading {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-headings);
+}
+/* Catalog */
+
+.main-header {
   background-color: var(--basic-background);
 }
 
