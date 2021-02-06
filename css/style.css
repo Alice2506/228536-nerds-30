@@ -145,6 +145,27 @@ ul {
   font-weight: 700;
   color: var(--basic-headings);
 }
+
+/* footer */
+
+.social-button {
+  width: 81px;
+  height: 81px;
+  background-color: var(--basic-background);
+  border-radius: 50%;
+}
+
+.add-phrase {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.sale {
+  color: var(--footer-text);
+}
+
+
 /* Catalog */
 
 .main-header {
