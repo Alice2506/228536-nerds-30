@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
   </head>
   <body class="body-page">
     <header class="main-header">
@@ -27,7 +26,7 @@
     </header>
     <main class="wrapper">
       <h1 class="main-header">Магазин готовых шаблонов</h1>
-      <section>
+      <section class="filter">
         <h2>Фильтр шаблонов</h2>
       <!--Разметка бегунка стоимости-->
           <div class="filter-range">
@@ -48,7 +47,7 @@
       <!--Разметка формы с radio и checkbox-->
        <form method="get" action="https://echo.htmlacademy.ru">
          <fieldset>
-           <legend>СЕТКА</legend>
+           <legend class="filter-range-title">СЕТКА</legend>
            <ul>
              <li>
                <input type="radio" name="grid-type" value="adaptive" id="adaptive-grid" checked>
@@ -65,7 +64,7 @@
            </ul>
          </fieldset>
          <fieldset>
-           <legend>ОСОБЕННОСТИ</legend>
+           <legend class="filter-range-title">ОСОБЕННОСТИ</legend>
            <ul>
              <li>
                <input type="checkbox" name="slider" id="filter-slider" checked>
@@ -97,9 +96,7 @@
     <section>
       <h2>Список шаблонов</h2>
       <div>
-        <span>
-          <strong>СОРТИРОВАТЬ:</strong>
-        </span>
+        <span class="filter-range-title">СОРТИРОВАТЬ:</span>
         <a href="#">ПО ЦЕНЕ</a>
         <a href="#">ПО ТИПУ</a>
         <a href="#">ПО НАЗВАНИЮ</a>
@@ -187,7 +184,7 @@
       <h2>Форма записи</h2>
       <img src="img/map.png" width="1440" height="416" alt="Карта">
       <div>
-        <p>NЁRDS DESIGN STUDIO</p>
+        <p class="form-heading">NЁRDS DESIGN STUDIO</p>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
         <button type="button">НАПИШИТЕ НАМ</button>

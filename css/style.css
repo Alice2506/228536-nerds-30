@@ -175,6 +175,13 @@ ul {
   background-color: var(--basic-background);
 }
 
+.filter-range-title {
+  color: var(--basic-headings);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
 .site-navigation a:active {
   color: var(--basic-headings);
   text-decoration: underline;
