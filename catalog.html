@@ -48,7 +48,7 @@
        <form method="get" action="https://echo.htmlacademy.ru">
          <fieldset>
            <legend class="filter-range-title">СЕТКА</legend>
-           <ul>
+           <ul class="filter-radio">
              <li>
                <input type="radio" name="grid-type" value="adaptive" id="adaptive-grid" checked>
                <label for="adaptive-grid">Адаптивная</label>
@@ -65,7 +65,7 @@
          </fieldset>
          <fieldset>
            <legend class="filter-range-title">ОСОБЕННОСТИ</legend>
-           <ul>
+           <ul class="filter-checkbox">
              <li>
                <input type="checkbox" name="slider" id="filter-slider" checked>
                <label for="filter-slider">Слайдер</label>
@@ -88,7 +88,7 @@
              </li>
            <ul>
          </fieldset>
-         <button type="submit">ПОКАЗАТЬ</button>
+         <button class="button grey" type="submit">ПОКАЗАТЬ</button>
        </form>
     </section>
     <!---->
@@ -97,9 +97,9 @@
       <h2>Список шаблонов</h2>
       <div>
         <span class="filter-range-title">СОРТИРОВАТЬ:</span>
-        <a href="#">ПО ЦЕНЕ</a>
-        <a href="#">ПО ТИПУ</a>
-        <a href="#">ПО НАЗВАНИЮ</a>
+        <a class="filter-range active" href="#">ПО ЦЕНЕ</a>
+        <a class="filter-range inactive" href="#">ПО ТИПУ</a>
+        <a class="filter-range inactive" href="#">ПО НАЗВАНИЮ</a>
         <a href="#"><img src="img/icon-down-dir.svg" alt="Вниз"></a>
         <a href="#"><img src="img/icon-up-dir.svg" alt="Вверх"></a>
       </div>
@@ -108,9 +108,9 @@
           <div>
             <img src="img/img-sedona.jpg" width="359" height="578" alt="Седона">
             <div>
-              <p>SEDONA</p>
-              <p>Информационный сайт для туристов</p>
-              <a href="#">9900</a>
+              <p class="form-heading">SEDONA</p>
+              <p class="form-record">Информационный сайт для туристов</p>
+              <a class="button" href="#">9900</a>
             </div>
           </div>
         </li>
@@ -118,9 +118,9 @@
           <div>
             <img src="img/img-pink.jpg" width="359" height="578" alt="Пинк">
             <div>
-              <p>PINK</p>
-              <p>Продуктовый лендинг приложения для iOS и Android copy</p>
-              <a href="#">9900</a>
+              <p class="form-heading">PINK</p>
+              <p class="form-record">Продуктовый лендинг приложения для iOS и Android copy</p>
+              <a class="button" href="#">9900</a>
             </div>
           </div>
         </li>
@@ -128,9 +128,9 @@
           <div>
             <img src="img/img-barbershop.jpg" width="359" height="578" alt="Барбершоп">
             <div>
-              <p>BARBERSHOP</p>
-              <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a href="#">9900</a>
+              <p class="form-heading">BARBERSHOP</p>
+              <p class="form-record">Сайт салона красоты. Для мужчин, да.</p>
+              <a class="button" href="#">9900</a>
             </div>
           </div>
         </li>
@@ -138,9 +138,9 @@
           <div>
             <img src="img/img-mishka.jpg" width="359" height="578" alt="Мишка">
             <div>
-              <p>MISHKA</p>
-              <p>Интернет-магазин вязаных игрушек</p>
-              <a href="#">9900</a>
+              <p class="form-heading">MISHKA</p>
+              <p class="form-record">Интернет-магазин вязаных игрушек</p>
+              <a class="button" href="#">9900</a>
             </div>
           </div>
         </li>
@@ -148,9 +148,9 @@
           <div>
             <img src="img/img-aplus.jpg" width="359" height="578" alt="A+">
             <div>
-              <p>A PLUS</p>
-              <p>Лендинг курсов повышения квалификации</p>
-              <a href="#">9900</a>
+              <p class="form-heading">A PLUS</p>
+              <p class="form-record">Лендинг курсов повышения квалификации</p>
+              <a class="button" href="#">9900</a>
             </div>
           </div>
         </li>
@@ -158,25 +158,25 @@
           <div>
             <img src="img/img-kvast.jpg" width="359" height="578" alt="Кваст">
             <div>
-              <p>КВАСТ</p>
-              <p>Промо-сайт производителя крафтового кваса</p>
-              <a href="#">9900</a>
+              <p class="form-heading">КВАСТ</p>
+              <p class="form-record">Промо-сайт производителя крафтового кваса</p>
+              <a class="button" href="#">9900</a>
             </div>
           </div>
         </li>
       </ul>
       <ul>
         <li>
-          <a>1</a>
+          <a class="page-numbers page-active">1</a>
         </li>
         <li>
-          <a href="№">2</a>
+          <a class="page-numbers page-inactive" href="№">2</a>
         </li>
         <li>
-          <a href="#">3</a>
+          <a class="page-numbers page-inactive" href="#">3</a>
         </li>
         <li>
-          <a href="#">СЛЕДУЮЩАЯ</a>
+          <a class="button grey" href="#">СЛЕДУЮЩАЯ</a>
         </li>
       </ul>
     </section>
