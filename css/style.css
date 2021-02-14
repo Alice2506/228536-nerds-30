@@ -59,6 +59,7 @@ button {
 /* Main navigation */
 .main-navigation {
   display: grid;
+  grid-template-columns: auto 1fr;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
