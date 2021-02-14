@@ -58,6 +58,7 @@ button {
 
 /* Main navigation */
 .main-navigation {
+  display: grid;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -67,6 +68,8 @@ button {
 }
 
 .main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: var(--basic-black);
 }
 
