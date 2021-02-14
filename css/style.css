@@ -70,7 +70,7 @@ button {
 
 .main-navigation-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
   background-color: var(--basic-black);
 }
 
@@ -90,6 +90,8 @@ button {
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
   outline: 3px solid rgba(0, 255, 255, 0.3);
   outline-offset: -3px;
   list-style: none;
@@ -120,7 +122,22 @@ button {
 
 /* section-features */
 .features {
+  display: grid;
+  grid-template-columns: 1fr auto;
   background-color: var(--basic-background);
+  outline: 3px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -3px;
+  margin-bottom: 80px;
+}
+
+.feature-slider-wrapper {
+  outline: 3px solid rgba(0, 255, 150, 0.7);
+  outline-offset: -3px;
+}
+
+.feature-img {
+  outline: 3px solid rgba(239, 200, 20, 0.9);
+  outline-offset: -3px;
 }
 
 .feature-slider h3 {
@@ -153,7 +170,38 @@ button {
   background-color: var(--basic-background);
 }
 
+/* section-service*/
+
+.service {
+  outline: 3px solid rgba(255, 0, 50, 0.3);
+  outline-offset: -3px;
+}
+
+.service-wrapper {
+  margin-bottom: 80px;
+  outline: 5px solid rgba(255, 0, 0 , 0.8);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 /* section-about us*/
+
+.about-description-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  outline: 3px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -3px;
+}
+
+.about {
+  outline: 3px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -3px;
+}
+
+.about-description {
+  outline: 3px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -3px;
+}
 
 .about-description h3 {
   font-size: 45px;
@@ -192,7 +240,19 @@ button {
   line-height: 18px;
 }
 
+/* section-partners */
+
+.partners {
+  outline: 3px solid rgba(255, 150, 0, 0.8);
+  outline-offset: -3px;
+}
+
 /* section-form*/
+
+.form {
+  outline: 3px solid rgba(0, 0, 255, 0.8);
+  outline-offset: -3px;
+}
 
 .form-record p {
   line-height: 18px;
