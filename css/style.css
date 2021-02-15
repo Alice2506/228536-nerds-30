@@ -15,7 +15,7 @@
 /* Global */
 
 .body-page {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -214,7 +214,20 @@ button {
   font-weight: 700;
 }
 
+.about-numbers {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.about-numbers img {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
 .about-numbers span {
+  grid-column-start: 1;
+  grid-column-end: 4;
   font-weight: 700;
   color: var(--basic-headings);
 }
@@ -247,10 +260,34 @@ button {
   outline-offset: -3px;
 }
 
+.partners-wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 /* section-form*/
 
 .form {
   outline: 3px solid rgba(0, 0, 255, 0.8);
+  outline-offset: -3px;
+}
+
+.form-wrapper {
+  height: 416px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+}
+
+.form-record {
+  width: 319px;
+  height: 308px;
+  padding-top: 50px;
+  padding-left: 50px;
+  background-color: var(--button-text);
+  outline: 3px solid rgba(150, 0, 0, 0.8);
   outline-offset: -3px;
 }
 
@@ -274,6 +311,8 @@ button {
 }
 /* footer */
 .main-footer {
+  display: grid;
+  grid-template-columns: auto auto auto 1fr;
   outline: 3px solid rgba(255, 0, 0, 0.4);
   outline-offset: -3px;
 }
