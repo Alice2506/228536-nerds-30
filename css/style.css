@@ -56,6 +56,8 @@ button {
 
 /* Main navigation */
 .main-navigation {
+  width: 1157px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: auto 1fr;
   font-size: 16px;
@@ -64,6 +66,19 @@ button {
   color: var(--basic-headings);
   background-color: transparent;
   text-transform: uppercase;
+}
+
+.wrapper h1 {
+  display: none;
+}
+
+.wrapper section {
+  width: 1157px;
+  margin: 0 auto;
+}
+
+.background-wrapper {
+  background-color: var(--basic-background);
 }
 
 .main-navigation-wrapper {
@@ -88,11 +103,22 @@ button {
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   outline: 3px solid rgba(0, 255, 255, 0.3);
   outline-offset: -3px;
   list-style: none;
+}
+
+.site-navigation li {
+  margin-left: 45px;
+}
+
+.site-navigation li:first-child {
+  margin-left: 0;
 }
 
 .site-navigation a {
@@ -191,11 +217,17 @@ button {
 .service {
   outline: 3px solid rgba(255, 0, 50, 0.3);
   outline-offset: -3px;
+  padding-top: 80px;
+}
+
+.service h2 {
+  display: none;
 }
 
 .service-wrapper {
   margin-bottom: 80px;
   outline: 5px solid rgba(255, 0, 0 , 0.8);
+  outline-offset: -5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -212,6 +244,10 @@ button {
 .about {
   outline: 3px solid rgba(255, 0, 255, 0.3);
   outline-offset: -3px;
+}
+
+.about h2 {
+  display: none;
 }
 
 .about-description {
@@ -274,12 +310,18 @@ button {
 .partners {
   outline: 3px solid rgba(255, 150, 0, 0.8);
   outline-offset: -3px;
+  padding-top: 46px;
+  padding-bottom: 44px;
+}
+
+.partners h2 {
+  display: none;
 }
 
 .partners-wrapper {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* section-form*/
@@ -287,6 +329,10 @@ button {
 .form {
   outline: 3px solid rgba(0, 0, 255, 0.8);
   outline-offset: -3px;
+}
+
+.form h2 {
+  display: none;
 }
 
 .form-wrapper {
@@ -327,6 +373,8 @@ button {
 }
 /* footer */
 .main-footer {
+  width: 1157px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: auto auto auto 1fr;
   outline: 3px solid rgba(255, 0, 0, 0.4);
