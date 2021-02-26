@@ -29,8 +29,10 @@
         </div>
       </nav>
     </header>
-    <main class="wrapper">
-      <h1 class="main-header main-heading">Магазин готовых шаблонов</h1>
+    <main class="catalog-wrapper">
+      <div class="background-wrapper">
+        <h1 class="main-header main-heading">Магазин готовых шаблонов</h1>
+      </div>
       <div class="content-wrapper">
         <section class="filter">
           <h2>Фильтр шаблонов</h2>
@@ -53,8 +55,8 @@
             </div>
       <!---->
       <!--Разметка формы с radio и checkbox-->
-         <form method="get" action="https://echo.htmlacademy.ru">
-           <fieldset  class="d-item">
+         <form class="radio-checkbox" method="get" action="https://echo.htmlacademy.ru">
+           <fieldset>
              <legend class="filter-range-title">СЕТКА</legend>
              <ul class="filter-radio">
                <li>
@@ -71,7 +73,7 @@
                </li>
              </ul>
            </fieldset>
-           <fieldset  class="d-item">
+           <fieldset>
              <legend class="filter-range-title">ОСОБЕННОСТИ</legend>
              <ul class="filter-checkbox">
                <li>
@@ -117,17 +119,17 @@
           <li>
             <div>
               <img src="img/img-sedona.jpg" width="359" height="578" alt="Седона">
-              <div>
+              <div class="price">
                 <p class="form-heading">SEDONA</p>
                 <p class="form-record">Информационный сайт для туристов</p>
                 <a class="button" href="#">9900</a>
-            </div>
+              </div>
             </div>
           </li>
           <li class="f-item">
             <div>
               <img src="img/img-pink.jpg" width="359" height="578" alt="Пинк">
-              <div>
+              <div class="price">
                 <p class="form-heading">PINK</p>
                 <p class="form-record">Продуктовый лендинг приложения для iOS и Android copy</p>
                 <a class="button" href="#">9900</a>
@@ -137,7 +139,7 @@
           <li class="h-item">
             <div>
               <img src="img/img-barbershop.jpg" width="359" height="578" alt="Барбершоп">
-              <div>
+              <div class="price">
                 <p class="form-heading">BARBERSHOP</p>
                 <p class="form-record">Сайт салона красоты. Для мужчин, да.</p>
                 <a class="button" href="#">9900</a>
@@ -147,7 +149,7 @@
           <li class="i-item">
             <div>
               <img src="img/img-mishka.jpg" width="359" height="578" alt="Мишка">
-              <div>
+              <div class="price">
                 <p class="form-heading">MISHKA</p>
                 <p class="form-record">Интернет-магазин вязаных игрушек</p>
                 <a class="button" href="#">9900</a>
@@ -157,7 +159,7 @@
           <li class="k-item">
             <div>
               <img src="img/img-aplus.jpg" width="359" height="578" alt="A+">
-              <div>
+              <div class="price">
                 <p class="form-heading">A PLUS</p>
                 <p class="form-record">Лендинг курсов повышения квалификации</p>
                 <a class="button" href="#">9900</a>
@@ -167,7 +169,7 @@
           <li class="l-item">
             <div>
               <img src="img/img-kvast.jpg" width="359" height="578" alt="Кваст">
-              <div>
+              <div class="price">
                 <p class="form-heading">КВАСТ</p>
                 <p class="form-record">Промо-сайт производителя крафтового кваса</p>
                 <a class="button" href="#">9900</a>
