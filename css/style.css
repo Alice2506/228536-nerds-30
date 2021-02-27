@@ -362,6 +362,10 @@ button {
   color: var(--contacts-text);
 }
 
+.form-record .button {
+  padding: 15px 44px;
+}
+
 .form-heading {
   font-size: 18px;
   line-height: 30px;
@@ -375,6 +379,38 @@ button {
   line-height: 18px;
   color: var(--footer-text);
 }
+
+/* Модальное окно */
+.modal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 960px;
+  height: 590px;
+  outline: 3px solid rgba(255, 150, 0, 0.8);
+  outline-offset: -3px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-top: 63px;
+}
+
+.modal span {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 52.73px;
+  color: var(--basic-headings);
+}
+
+.appointment-item label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-headings);
+}
+
+.appointment .button {
+  padding: 15px 83px;
+}
+
 /* footer */
 .main-footer {
   width: 1157px;
