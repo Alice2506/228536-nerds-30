@@ -39,10 +39,6 @@ h3 {
   color: var(--basic-headings);
 }
 
-button {
-  border: none;
-}
-
 /* Header */
 .main-header {
   background-color: var(--basic-background);
@@ -144,12 +140,14 @@ button {
 }
 
 .cart-item {
-  outline: 3px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cart {
   color: var(--basic-headings);
+  margin-left: 25px;
 }
 
 .cart:hover {
@@ -176,6 +174,10 @@ button {
   margin-bottom: 80px;
 }
 
+.features h2 {
+  display: none;
+}
+
 .feature-slider-wrapper {
   outline: 3px solid rgba(0, 255, 150, 0.7);
   outline-offset: -3px;
@@ -193,6 +195,11 @@ button {
   color: var(--basic-headings);
 }
 
+.feature-slider p {
+  margin-top: -20px;
+  margin-bottom: 38px;
+}
+
 .button {
   font-size: 16px;
   line-height: 18px;
@@ -201,6 +208,14 @@ button {
   background-color: var(--button-background);
   text-transform: uppercase;
   border: none;
+}
+
+.feature-slider-wrapper .button {
+  padding-left: 54px;
+  padding-right: 54px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  border-radius: 3px;
 }
 
 .green {
