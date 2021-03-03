@@ -6,6 +6,9 @@
   --basic-headings: #000000;
   --basic-background: #eeeeee;
   --button-background: #FB565A;
+  --hover-button-background: #E74246;
+  --active-button-background: #D7373B;
+  --slider-button: #C1C1C1;
   --green-button-background: #00CA74;
   --yellow-button-background: #EFC849;
   --contacts-text: #666666;
@@ -164,7 +167,7 @@ h3 {
   text-decoration: underline;
 }
 
-/* section-features */
+/* section-features
 .features {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -231,7 +234,99 @@ h3 {
   background-color: var(--basic-background);
 }
 
-/* section-service*/
+*/
+
+/*  section-features */
+
+.slider-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  outline: 3px solid rgba(255, 255, 0, 0.9);
+  outline-offset: -3px;
+}
+
+.slider-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--basic-background);
+  outline: 3px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -3px;
+  margin-bottom: 80px;
+}
+
+.feature-slider {
+  width: 538px;
+  z-index: 2;
+}
+
+.feature-slider p {
+  margin-bottom: 38px;
+}
+
+.feature-img {
+  width: 760px;
+  z-index: 1;
+  margin-left: -141px;
+}
+
+.slider-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-headings);
+}
+
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--button-text);
+  background-color: var(--button-background);
+  text-transform: uppercase;
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--hover-button-background);
+}
+
+.button:active {
+  background-color: var(--active-button-background);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.slider-button {
+  padding-left: 54px;
+  padding-right: 54px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  border-radius: 3px;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--button-text);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.green {
+  background-color: var(--green-button-background);
+}
+
+.yellow {
+  background-color: var(--yellow-button-background);
+}
+
+.grey {
+  color: var(--basic-headings);
+  background-color: var(--basic-background);
+}
+
+/*section-service*/
 
 .service {
   outline: 3px solid rgba(255, 0, 50, 0.3);
