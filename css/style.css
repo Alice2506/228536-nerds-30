@@ -238,6 +238,10 @@ h3 {
 
 /*  section-features */
 
+.features {
+  position: relative;
+}
+
 .slider-list {
   list-style: none;
   margin: 0;
@@ -306,11 +310,35 @@ h3 {
 
 .slider-controls button {
   padding: 0;
+  margin-right: 17px;
   width: 18px;
   height: 18px;
   background-color: var(--button-text);
   border-radius: 50%;
   cursor: pointer;
+  border: none;
+}
+
+.slider-controls button::before {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 2px solid #C1C1C1;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 317px;
+  left: 50%;
+  z-index: 20;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: grid;
 }
 
 .green {
