@@ -305,27 +305,28 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.line {
+  margin: 0 auto;
+  padding: 0;
+  width: 1157px;
+  height: 2px;
+  background-color: var(--basic-background);
+}
+
 /* section-about us*/
+.about {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
 
 .about-description-wrapper {
   display: grid;
-  grid-template-columns: 1fr auto;
-  outline: 3px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -3px;
-}
-
-.about {
-  outline: 3px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -3px;
+  grid-template-columns: 1fr 360px;
+  column-gap: 140px;
 }
 
 .about h2 {
   display: none;
-}
-
-.about-description {
-  outline: 3px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -3px;
 }
 
 .about-description h3 {
@@ -333,6 +334,20 @@ h3 {
   line-height: 45px;
   font-weight: 500;
   color: var(--basic-headings);
+}
+
+.hyphen {
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--button-background);
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.about-description ul {
+  list-style: none;
+  padding: 0;
 }
 
 .about-description span {
@@ -366,6 +381,7 @@ h3 {
   line-height: 64px;
   font-weight: 700;
   color: var(--basic-headings);
+  margin-bottom: -5px;
 }
 
 .numbers span {
@@ -381,8 +397,6 @@ h3 {
 /* section-partners */
 
 .partners {
-  outline: 3px solid rgba(255, 150, 0, 0.8);
-  outline-offset: -3px;
   padding-top: 46px;
   padding-bottom: 44px;
 }
