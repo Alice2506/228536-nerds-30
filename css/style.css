@@ -13,6 +13,10 @@
   --yellow-button-background: #EFC849;
   --contacts-text: #666666;
   --footer-text: #444444;
+  --green-hover: #00BC6C;
+  --green-active: #00AA62;
+  --yellow-hover: #EAB534;
+  --yellow-active: #E5A722;
 }
 
 /* Global */
@@ -219,6 +223,7 @@ h3 {
 .button:active {
   background-color: var(--active-button-background);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .slider-button {
@@ -276,6 +281,16 @@ h3 {
   border-radius: 3px;
 }
 
+.green:hover {
+  background-color: var(--green-hover);
+}
+
+.green:active {
+  background-color: var(--green-active);
+  color: var(--button-text);
+  opacity: 0.1;
+}
+
 .yellow {
   background-color: var(--yellow-button-background);
   padding-left: 40px;
@@ -283,6 +298,16 @@ h3 {
   padding-top: 17px;
   padding-bottom: 15px;
   border-radius: 3px;
+}
+
+.yellow:hover {
+  background-color: var(--yellow-hover);
+}
+
+.yellow:active {
+  background-color: var(--yellow-active);
+  color: var(--button-text);
+  opacity: 0.1;
 }
 
 .grey {
@@ -411,12 +436,18 @@ h3 {
   justify-content: space-around;
 }
 
-/* section-form*/
-
-.form {
-  outline: 3px solid rgba(0, 0, 255, 0.8);
-  outline-offset: -3px;
+.partners-logo-img {
+  opacity: 0.2;
 }
+
+.partners-logo-img:hover {
+  opacity: 1;
+}
+
+.partners-logo-img:active {
+  opacity: 0.1;
+}
+/* section-form*/
 
 .form h2 {
   display: none;
@@ -428,16 +459,16 @@ h3 {
   grid-template-columns: 1fr 1fr;
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
+  margin-top: 80px;
 }
 
 .form-record {
-  width: 319px;
-  height: 308px;
+  width: 269px;
+  height: 258px;
   padding-top: 50px;
   padding-left: 50px;
   background-color: var(--button-text);
-  outline: 3px solid rgba(150, 0, 0, 0.8);
-  outline-offset: -3px;
+  margin-top: 54px;
 }
 
 .form-record p {
@@ -447,6 +478,7 @@ h3 {
 
 .form-record .button {
   padding: 15px 44px;
+  border-radius: 3px;
 }
 
 .form-heading {
@@ -454,6 +486,11 @@ h3 {
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-headings);
+}
+
+.map-marker {
+  margin-top: 86px;
+  margin-left: 250px;
 }
 
 .appointment-form {
@@ -466,9 +503,9 @@ h3 {
 /* Модальное окно */
 .modal {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 960px;
-  height: 590px;
+  grid-template-columns: 1fr auto;
+  width: 860px;
+  height: 527px;
   outline: 3px solid rgba(255, 150, 0, 0.8);
   outline-offset: -3px;
   margin: 0 auto;
@@ -481,6 +518,15 @@ h3 {
   font-size: 45px;
   line-height: 52.73px;
   color: var(--basic-headings);
+}
+
+.modal img {
+  margin-right: 90px;
+}
+
+.appointment {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .appointment-item label {
