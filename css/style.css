@@ -250,10 +250,26 @@ h3 {
   top: 317px;
   left: 50%;
   z-index: 20;
+  display: flex;
 }
 
 .slider-controls .current {
-  background-image: url("../img/current-slide-button.svg");
+  background-color: #fff;
+  position: relative;
+}
+
+.slider-controls .current::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #C1C1C1;
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  z-index: 50;
+  text-align: center;
 }
 
 .slide {
@@ -499,8 +515,9 @@ h3 {
   line-height: 18px;
   color: var(--footer-text);
 }
-
+/*
 /* Модальное окно */
+/*
 .modal {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -538,7 +555,7 @@ h3 {
 
 .appointment .button {
   padding: 15px 83px;
-}
+}*/
 
 /* footer */
 .main-footer {
