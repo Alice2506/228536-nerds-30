@@ -470,12 +470,16 @@ h3 {
 }
 
 .form-wrapper {
+  width: 100%;
   height: 416px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-image: url(../img/map.png);
+  background-image: url("../img/map.png");
   background-repeat: no-repeat;
   margin-top: 80px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .form-record {
