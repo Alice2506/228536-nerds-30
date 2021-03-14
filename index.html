@@ -164,49 +164,46 @@
             <button class="button" type="button">НАПИШИТЕ НАМ</button>
           </div>
           <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
-        </section>
-      </div>
       <!--Окно формы обратной связи-->
-     <div class="modal">
-        <span>Напишите нам</span>
-        <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть">
-        <form class="appointment" action="https://echo.htmlacademy.ru" method="get">
-          <p class="appointment-item">
-            <label> Ваше имя:
-              <input class="appointment-form" type="text" name="name" id="form-name" placeholder="Имя Фамилия">
-            </label>
-          </p>
-          <p class="appointment-item">
-            <label> Ваш e-mail:
-              <input class="appointment-form" type="text" name="email" id="form-mail" placeholder="email@example.com">
-            </label>
-          </p>
-          <p class="appointment-item">
-            <label> Текст письма:
-              <textarea class="appointment-form" name="letter" id="form-letter" rows="5" placeholder="В свободной форме"></textarea>
-            </label>
-          </p>
-          <input class="button" type="submit" value="Отправить">
-        </form>
+          <div class="modal visually-hidden">
+            <span>Напишите нам</span>
+            <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть">
+            <form class="appointment" action="https://echo.htmlacademy.ru" method="get">
+              <p class="appointment-item">
+                <label for="form-name"> Ваше имя:</label>
+                <input class="name-field" type="text" name="name" id="form-name" placeholder="Имя Фамилия">
+              </p>
+              <p class="appointment-item">
+                <label for="form-mail"> Ваш e-mail:</label>
+                <input class="name-field" type="text" name="email" id="form-mail" placeholder="email@example.com">
+              </p>
+              <p class="appointment-item">
+                <label for="form-letter"> Текст письма:</label>
+                <textarea class="appointment-form" name="letter" id="form-letter" rows="5" placeholder="В свободной форме"></textarea>
+              </p>
+              <input class="button" type="submit" value="Отправить">
+            </form>
+          </div>
+        </section>
       </div>
     </main>
     <footer class="main-footer">
       <div class="social-button">
         <a href="#">
-          <img class="social-button-img" src="img/vk-icon.svg" width="81" height="81" alt="VK">
+          <img class="social-button-img" src="img/vk-icon.svg" width="26.01" height="15" alt="VK">
         </a>
       </div>
       <div class="social-button">
         <a href="#">
-          <img class="social-button-img" src="img/fb-icon.svg" width="81" height="81" alt="FB">
+          <img class="social-button-img" src="img/fb-icon.svg" width="12" height="22" alt="FB">
         </a>
       </div>
       <div class="social-button">
         <a href="#">
-          <img class="social-button-img" src="img/insta-icon.svg" width="81" height="81" alt="Instagram">
+          <img class="social-button-img" src="img/insta-icon.svg" width="21" height="21" alt="Instagram">
         </a>
       </div>
-      <div>
+      <div class="add">
         <p class="add-phrase">Давайте дружить, это выгодно!</p>
         <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
       </div>

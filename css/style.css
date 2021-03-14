@@ -519,62 +519,111 @@ h3 {
   line-height: 18px;
   color: var(--footer-text);
 }
-/*
+
 /* Модальное окно */
-/*
+
 .modal {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  width: 860px;
-  height: 527px;
-  outline: 3px solid rgba(255, 150, 0, 0.8);
-  outline-offset: -3px;
-  margin: 0 auto;
-  padding-left: 100px;
-  padding-top: 63px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 760px;
+  height: 450px;
+  margin-left: 100px;
+  padding: 70px 100px;
+  position: absolute;
+  top: 1650px;
+  background-color: var(--button-text);
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
+}
+
+.visually-hidden {
+  visibility: hidden;
 }
 
 .modal span {
   font-weight: 700;
   font-size: 45px;
+  height: 70px;
   line-height: 52.73px;
   color: var(--basic-headings);
 }
 
 .modal img {
-  margin-right: 90px;
+  margin-left: 420px;
+  align-self: center;
+  opacity: 0.3;
+}
+
+.modal img:hover {
+  opacity: 1;
 }
 
 .appointment {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .appointment-item label {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-headings);
+  margin-bottom: 10px;
+}
+
+.appointment-form {
+  width: 760px;
+  height: 118px;
+  border: 2px solid #D7DCDE;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.name-field {
+  width: 360px;
+  height: 50px;
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #D7DCDE;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-left: 16px;
 }
 
 .appointment .button {
-  padding: 15px 83px;
-}*/
+  width: 259px;
+  height: 50px;
+  border-radius: 3px;
+}
 
 /* footer */
 .main-footer {
   width: 1157px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto auto auto 1fr;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
   outline: 3px solid rgba(255, 0, 0, 0.4);
   outline-offset: -3px;
 }
+
+.add {
+  margin-left: 140px;
+}
+
 .social-button {
   width: 81px;
   height: 81px;
   background-color: var(--basic-background);
   border-radius: 50%;
+  margin-right: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .add-phrase {
@@ -587,6 +636,7 @@ h3 {
 .sale {
   color: var(--footer-text);
   line-height: 22px;
+  margin-top: -20px;
 }
 
 
