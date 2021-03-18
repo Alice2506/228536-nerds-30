@@ -36,78 +36,77 @@
       <div class="content-wrapper">
         <section class="filter">
           <h2>Фильтр шаблонов</h2>
-      <!--Разметка бегунка стоимости-->
-            <div class="filter-range">
-              <div class="filter-range-title a-item">СТОИМОСТЬ:</div>
-              <div class="d-item">
-                <div class="price-controls">
-                  <label class="min-price">ОТ <input type="text" name="min-price" value="0"></label>
-                  <label class="max-price">ДО <input type="text" name="max-price" value="15000"></label>
-                </div>
+          <form class="radio-checkbox" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="15000">
+                  </label>
                 </div>
               </div>
-            </div>
-      <!---->
-      <!--Разметка формы с radio и checkbox-->
-         <form class="radio-checkbox" method="get" action="https://echo.htmlacademy.ru">
-           <fieldset>
-             <legend class="filter-range-title">СЕТКА</legend>
-             <ul class="filter-radio">
-               <li>
-                 <input type="radio" name="grid-type" value="adaptive" id="adaptive-grid" checked>
-                 <label for="adaptive-grid">Адаптивная</label>
-               </li>
-               <li>
-                 <input type="radio" name="grid-type" value="fixed" id="fixed-grid">
-                 <label for="fixed-grid">Фиксированная</label>
-               </li>
-               <li>
-                 <input type="radio" name="grid-type" value="fluid" id="fluid-grid">
-                 <label for="fluid-grid">Резиновая</label>
-               </li>
-             </ul>
-           </fieldset>
-           <fieldset>
-             <legend class="filter-range-title">ОСОБЕННОСТИ</legend>
-             <ul class="filter-checkbox">
-               <li>
-                 <input type="checkbox" name="slider" id="filter-slider" checked>
-                 <label for="filter-slider">Слайдер</label>
-               </li>
-               <li>
-                 <input type="checkbox" name="advantages" id="filter-advantages">
-                 <label for="filter-advantages">Блок преимуществ</label>
-               </li>
-               <li>
-                 <input type="checkbox" name="news" id="filter-news" checked>
-                 <label for="filter-news">Новости</label>
-               </li>
-               <li>
-                 <input type="checkbox" name="gallery" id="filter-gallery">
-                 <label for="filter-gallery">Галерея</label>
-               </li>
-               <li>
-                 <input type="checkbox" name="cart" id="filter-cart">
-                 <label for="filter-cart">Корзина</label>
-               </li>
-             <ul>
-           </fieldset>
-           <button class="button grey  g-item" type="submit">ПОКАЗАТЬ</button>
-         </form>
+            </fieldset>
+            <fieldset>
+              <legend class="filter-range-title">СЕТКА</legend>
+              <ul class="filter-radio">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid-type" value="adaptive" id="adaptive-grid" checked>
+                  <label for="adaptive-grid">Адаптивная</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid-type" value="fixed" id="fixed-grid">
+                  <label for="fixed-grid">Фиксированная</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid-type" value="fluid" id="fluid-grid">
+                  <label for="fluid-grid">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend class="filter-range-title">ОСОБЕННОСТИ</legend>
+              <ul class="filter-checkbox">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
+                  <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="cart" id="filter-cart">
+                  <label for="filter-cart">Корзина</label>
+                </li>
+              <ul>
+            </fieldset>
+            <button class="button grey" type="submit">ПОКАЗАТЬ</button>
+          </form>
         </section>
-    <!---->
-    <!-- Разметка элемента с сортировкой по цене - спросить у наставника-->
-      <section class="patterns">
+        <section class="patterns">
         <h2>Список шаблонов</h2>
         <div class="filter-range-wrapper">
           <span class="filter-range-title">СОРТИРОВАТЬ:</span>
-          <div>
+          <div class="sorting">
             <a class="filter-range active" href="#">ПО ЦЕНЕ</a>
             <a class="filter-range inactive" href="#">ПО ТИПУ</a>
             <a class="filter-range inactive" href="#">ПО НАЗВАНИЮ</a>
@@ -117,75 +116,105 @@
         </div>
         <ul class="patterns-list">
           <li>
-            <div>
+            <div class="pattern">
+              <div class="patterns-top">
+                <div class="patterns-top-circle"></div>
+                <div class="patterns-top-circle"></div>
+                <div class="patterns-top-circle"></div>
+              </div>
               <img src="img/img-sedona.jpg" width="359" height="578" alt="Седона">
               <div class="price">
                 <p class="form-heading">SEDONA</p>
-                <p class="form-record">Информационный сайт для туристов</p>
+                <p class="phrase">Информационный сайт для туристов</p>
                 <a class="button" href="#">9900</a>
               </div>
             </div>
           </li>
-          <li class="f-item">
-            <div>
+          <li>
+            <div class="pattern">
+              <div class="patterns-top">
+                <div class="patterns-top-circle"></div>
+                <div class="patterns-top-circle"></div>
+                <div class="patterns-top-circle"></div>
+              </div>
               <img src="img/img-pink.jpg" width="359" height="578" alt="Пинк">
               <div class="price">
                 <p class="form-heading">PINK</p>
-                <p class="form-record">Продуктовый лендинг приложения для iOS и Android copy</p>
+                <p class="phrase">Продуктовый лендинг приложения для iOS и Android</p>
                 <a class="button" href="#">9900</a>
               </div>
             </div>
           </li>
-          <li class="h-item">
-            <div>
+          <li>
+            <div class="pattern">
+              <div class="patterns-top">
+                <div class="patterns-top-circle"></div>
+                <div class="patterns-top-circle"></div>
+                <div class="patterns-top-circle"></div>
+              </div>
               <img src="img/img-barbershop.jpg" width="359" height="578" alt="Барбершоп">
               <div class="price">
                 <p class="form-heading">BARBERSHOP</p>
-                <p class="form-record">Сайт салона красоты. Для мужчин, да.</p>
+                <p class="phrase">Сайт салона красоты. Для мужчин, да.</p>
                 <a class="button" href="#">9900</a>
               </div>
             </div>
           </li>
-          <li class="i-item">
-            <div>
+          <li>
+            <div class="pattern">
+              <div class="patterns-top">
+                <div class="patterns-top-circle"></div>
+                <div class="patterns-top-circle"></div>
+                <div class="patterns-top-circle"></div>
+              </div>
               <img src="img/img-mishka.jpg" width="359" height="578" alt="Мишка">
               <div class="price">
                 <p class="form-heading">MISHKA</p>
-                <p class="form-record">Интернет-магазин вязаных игрушек</p>
+                <p class="phrase">Интернет-магазин вязаных игрушек</p>
                 <a class="button" href="#">9900</a>
               </div>
             </div>
           </li>
-          <li class="k-item">
-            <div>
+          <li>
+            <div class="pattern">
+              <div class="patterns-top">
+                <div class="patterns-top-circle"></div>
+                <div class="patterns-top-circle"></div>
+                <div class="patterns-top-circle"></div>
+              </div>
               <img src="img/img-aplus.jpg" width="359" height="578" alt="A+">
               <div class="price">
                 <p class="form-heading">A PLUS</p>
-                <p class="form-record">Лендинг курсов повышения квалификации</p>
+                <p class="phrase">Лендинг курсов повышения квалификации</p>
                 <a class="button" href="#">9900</a>
               </div>
             </div>
           </li>
-          <li class="l-item">
-            <div>
+          <li>
+            <div class="pattern">
+              <div class="patterns-top">
+                <div class="patterns-top-circle"></div>
+                <div class="patterns-top-circle"></div>
+                <div class="patterns-top-circle"></div>
+              </div>
               <img src="img/img-kvast.jpg" width="359" height="578" alt="Кваст">
               <div class="price">
                 <p class="form-heading">КВАСТ</p>
-                <p class="form-record">Промо-сайт производителя крафтового кваса</p>
+                <p class="phrase">Промо-сайт производителя крафтового кваса</p>
                 <a class="button" href="#">9900</a>
               </div>
             </div>
           </li>
         </ul>
         <ul class="pages">
-          <li>
-            <a class="page-numbers page-active">1</a>
+          <li class="page-numbers">
+            <a class="page-active">1</a>
           </li>
-          <li>
-            <a class="page-numbers page-inactive" href="№">2</a>
+          <li class="page-numbers">
+            <a class="page-inactive" href="№">2</a>
           </li>
-          <li>
-            <a class="page-numbers page-inactive" href="#">3</a>
+          <li class="page-numbers">
+            <a class="page-inactive" href="#">3</a>
           </li>
           <li>
             <a class="button grey" href="#">СЛЕДУЮЩАЯ</a>
@@ -193,19 +222,19 @@
         </ul>
       </section>
      </div>
-     <section class="form">
-       <h2>Форма записи</h2>
-       <div class="form-wrapper">
-         <!--<img class="map-img" src="img/map.png" width="1440" height="416" alt="Карта">-->
+     <div class="form-wrapper">
+       <img class="map" src="img/map.png" alt="map">
+       <section class="form">
+         <h2>Форма записи</h2>
          <div class="form-record">
            <span class="form-heading">NЁRDS DESIGN STUDIO</span>
            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-           <p>тел. +7 (812) 275-75-75</p>
+           <a href="">тел. +7 (812) 275-75-75</a>
            <button class="button" type="button">НАПИШИТЕ НАМ</button>
          </div>
          <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
-       </div>
-     </section>
+       </section>
+     </div>
     </main>
     <footer class="main-footer">
       <div class="social-button">
@@ -223,7 +252,7 @@
           <img class="social-button-img" src="img/insta-icon.svg" width="21" height="21" alt="Instagram">
         </a>
       </div>
-      <div>
+      <div class="add">
         <p class="add-phrase">Давайте дружить, это выгодно!</p>
         <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
       </div>
