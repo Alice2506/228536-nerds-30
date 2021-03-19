@@ -906,8 +906,6 @@ h3 {
 }
 
 .patterns {
-  outline: 3px solid rgba(0, 255, 150, 0.8);
-  outline-offset: -3px;
 }
 
 .patterns h2 {
@@ -928,10 +926,53 @@ h3 {
 
 .pattern {
   position: relative;
+  border-radius: 3px;
+}
+
+.pattern img {
+  padding-top: 40px;
+}
+
+.pattern::before {
+  content: "";
+  padding-left: 16px;
+  width: 343px;
+  height: 40px;
+  background-color: var(--patterns-top);
+  opacity: 0.12;
+  position: absolute;
+  top: 0px;
+}
+
+.pattern::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--button-text);
+  margin-right: 9px;
+  position: absolute;
+  z-index: 10;
+  top: 13px;
+  left: 16px;
 }
 
 .pattern:hover {
+  box-shadow: 0px 4px 8px rgba(200, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.pattern ~ .price:hover {
+  visibility: visible;
+}
+
+.pattern::before:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  opacity: 1;
+}
+
+/*.pattern ~ .patterns-top {
+  opacity: 1;
 }
 
 .patterns-top {
@@ -944,27 +985,28 @@ h3 {
   opacity: 0.12;
 }
 
-.patterns-top:hover {
-  opacity: 1;
-}
-
 .patterns-top-circle {
   width: 14px;
   height: 14px;
   border-radius: 50%;
   background-color: var(--button-text);
   margin-right: 9px;
-}
+}*/
 
 .price {
   position: absolute;
-  top: 400px;
+  top: 395px;
   width: 259px;
   height: 181px;
   background-color: var(--basic-background);
   text-align: center;
   padding: 16px 50px 24px 50px;
-}
+  display: none;
+  }
+
+.price:hover {
+    display: block;
+  }
 
 .price p {
   margin: 0;
