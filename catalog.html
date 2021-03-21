@@ -23,7 +23,6 @@
             <li><a href="blank.html">Контакты</a></li>
           </ul>
           <div class="cart-item">
-            <img src="img/cart-icon.svg" alt="Корзина">
             <a class="cart" href="blank.html">Корзина</a>
           </div>
         </div>
@@ -110,13 +109,18 @@
             <a class="filter-range active" href="#">ПО ЦЕНЕ</a>
             <a class="filter-range inactive" href="#">ПО ТИПУ</a>
             <a class="filter-range inactive" href="#">ПО НАЗВАНИЮ</a>
-            <a href="#"><img src="img/icon-down-dir.svg" alt="Вниз"></a>
-            <a href="#"><img src="img/icon-up-dir.svg" alt="Вверх"></a>
+            <a class="filter-range active" href="#"><img src="img/icon-down-dir.svg" alt="Вниз"></a>
+            <a class="filter-range inactive" href="#"><img src="img/icon-up-dir.svg" alt="Вверх"></a>
           </div>
         </div>
         <ul class="patterns-list">
           <li>
             <div class="pattern">
+              <svg width="60,02" height="40">
+                <circle r="7" cx="23" cy="50%" fill="white"></circle>
+                <circle r="7" cx="46" cy="50%" fill="white"></circle>
+                <circle r="7" cx="69" cy="50%" fill="white"></circle>
+              </svg>
               <img src="img/img-sedona.jpg" width="359" height="578" alt="Седона">
               <div class="price">
                 <p class="form-heading">SEDONA</p>
@@ -127,6 +131,11 @@
           </li>
           <li>
             <div class="pattern">
+              <svg width="60,02" height="40">
+                <circle r="7" cx="23" cy="50%" fill="white"></circle>
+                <circle r="7" cx="46" cy="50%" fill="white"></circle>
+                <circle r="7" cx="69" cy="50%" fill="white"></circle>
+              </svg>
               <img src="img/img-pink.jpg" width="359" height="578" alt="Пинк">
               <div class="price">
                 <p class="form-heading">PINK</p>
@@ -137,6 +146,11 @@
           </li>
           <li>
             <div class="pattern">
+              <svg width="60,02" height="40">
+                <circle r="7" cx="23" cy="50%" fill="white"></circle>
+                <circle r="7" cx="46" cy="50%" fill="white"></circle>
+                <circle r="7" cx="69" cy="50%" fill="white"></circle>
+              </svg>
               <img src="img/img-barbershop.jpg" width="359" height="578" alt="Барбершоп">
               <div class="price">
                 <p class="form-heading">BARBERSHOP</p>
@@ -147,6 +161,11 @@
           </li>
           <li>
             <div class="pattern">
+              <svg width="60,02" height="40">
+                <circle r="7" cx="23" cy="50%" fill="white"></circle>
+                <circle r="7" cx="46" cy="50%" fill="white"></circle>
+                <circle r="7" cx="69" cy="50%" fill="white"></circle>
+              </svg>
               <img src="img/img-mishka.jpg" width="359" height="578" alt="Мишка">
               <div class="price">
                 <p class="form-heading">MISHKA</p>
@@ -157,6 +176,11 @@
           </li>
           <li>
             <div class="pattern">
+              <svg width="60,02" height="40">
+                <circle r="7" cx="23" cy="50%" fill="white"></circle>
+                <circle r="7" cx="46" cy="50%" fill="white"></circle>
+                <circle r="7" cx="69" cy="50%" fill="white"></circle>
+              </svg>
               <img src="img/img-aplus.jpg" width="359" height="578" alt="A+">
               <div class="price">
                 <p class="form-heading">A PLUS</p>
@@ -167,6 +191,11 @@
           </li>
           <li>
             <div class="pattern">
+              <svg width="60,02" height="40">
+                <circle r="7" cx="23" cy="50%" fill="white"></circle>
+                <circle r="7" cx="46" cy="50%" fill="white"></circle>
+                <circle r="7" cx="69" cy="50%" fill="white"></circle>
+              </svg>
               <img src="img/img-kvast.jpg" width="359" height="578" alt="Кваст">
               <div class="price">
                 <p class="form-heading">КВАСТ</p>
@@ -176,19 +205,11 @@
             </div>
           </li>
         </ul>
-        <ul class="pages">
-          <li class="page-numbers">
-            <a class="page-active">1</a>
-          </li>
-          <li class="page-numbers">
-            <a class="page-inactive" href="№">2</a>
-          </li>
-          <li class="page-numbers">
-            <a class="page-inactive" href="#">3</a>
-          </li>
-          <li>
-            <a class="button grey" href="#">СЛЕДУЮЩАЯ</a>
-          </li>
+        <ul class="pages-list">
+          <li class="pages-item number pages-item-current"><a>1</a></li>
+          <li class="pages-item number"><a href="#">2</a></li>
+          <li class="pages-item number"><a href="#">3</a></li>
+          <li class="pages-item button grey"><a href="#">СЛЕДУЮЩАЯ</a></li>
         </ul>
       </section>
      </div>
@@ -203,6 +224,25 @@
            <button class="button" type="button">НАПИШИТЕ НАМ</button>
          </div>
          <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
+         <div class="modal">
+           <span>Напишите нам</span>
+           <button class="cross" type="button"></button>
+           <form class="appointment" action="https://echo.htmlacademy.ru" method="get">
+             <p class="appointment-item">
+               <label for="form-name"> Ваше имя:</label>
+               <input class="name-field" type="text" name="name" id="form-name" placeholder="Имя Фамилия">
+             </p>
+             <p class="appointment-item">
+               <label for="form-mail"> Ваш e-mail:</label>
+               <input class="name-field" type="text" name="email" id="form-mail" placeholder="email@example.com">
+             </p>
+             <p class="appointment-item">
+               <label for="form-letter"> Текст письма:</label>
+               <textarea class="appointment-form" name="letter" id="form-letter" rows="5" placeholder="В свободной форме"></textarea>
+             </p>
+             <input class="button" type="submit" value="Отправить">
+           </form>
+         </div>
        </section>
      </div>
     </main>
