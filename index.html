@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
   </head>
@@ -17,7 +17,7 @@
         </a>
         <div class="main-navigation-wrapper"> <!-- grid -->
           <ul class="site-navigation">
-            <li><a href="blank.html">Студия</a></li>
+            <li class="current-menu-item"><a href="blank.html">Студия</a></li>
             <li><a href="blank.html">Клиенты</a></li>
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="blank.html">Контакты</a></li>
@@ -129,7 +129,7 @@
       <div class="line"></div>
       <section class="partners">
         <h2>Партнеры</h2>
-        <div class="partners-wrapper">
+        <div class="partners-wrapper htmlacademy">
           <div class="partners-logo">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img class="partners-logo-img" src="img/logo-htmlacademy.png" width="199" height="67.82" alt="Htmlacademy">
@@ -165,7 +165,7 @@
           </div>
           <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
       <!--Окно формы обратной связи-->
-          <div class="modal">
+          <div class="modal visually-hidden">
             <span>Напишите нам</span>
             <button class="cross" type="button"></button>
             <form class="appointment" action="https://echo.htmlacademy.ru" method="get">
