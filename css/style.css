@@ -501,7 +501,7 @@ h3 {
 
 .partners {
   padding-top: 46px;
-  padding-bottom: 24px;
+  padding-bottom: 38px;
 }
 
 .partners h2 {
@@ -513,10 +513,42 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-left: -30px;
+  position: relative;
 }
 
 .partners-logo-img {
   opacity: 0.2;
+}
+
+.partners-wrapper div:first-child::after {
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: var(--basic-background);
+  position: absolute;
+  top: 10%;
+  left: 300px;
+}
+
+.partners-wrapper div:nth-child(2)::after {
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: var(--basic-background);
+  position: absolute;
+  top: 10%;
+  left: 610px;
+}
+
+.partners-wrapper div:nth-child(3)::after {
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: var(--basic-background);
+  position: absolute;
+  top: 10%;
+  left: 910px;
 }
 
 .partners-logo-img:hover {
@@ -525,10 +557,6 @@ h3 {
 
 .partners-logo-img:active {
   opacity: 0.1;
-}
-
-.htmlacademy {
-  margin-left: -20px;
 }
 
 /* section-form*/
@@ -563,6 +591,7 @@ h3 {
 .form-record p {
   line-height: 18px;
   color: var(--contacts-text);
+  padding-top: 8px;
 }
 
 .form-record a {
@@ -585,8 +614,8 @@ h3 {
 
 .map-marker {
   position: absolute;
-  margin-top: -320px;
-  margin-left: 750px;
+  margin-top: -336px;
+  margin-left: 680px;
 }
 
 .appointment-form {
@@ -751,12 +780,15 @@ h3 {
   line-height: 36px;
   font-weight: 700;
   color: var(--basic-headings);
+  margin-left: -7px;
+  margin-top: 27px;
 }
 
 .sale {
   color: var(--footer-text);
   line-height: 22px;
-  margin-top: -20px;
+  margin-top: -26px;
+  margin-left: -7px;
 }
 
 
@@ -777,14 +809,16 @@ h3 {
   grid-template-columns: 360px auto;
   width: 1157px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 53px;
+  margin-bottom: -37px;
 }
 
 .main-heading {
   width: 1157px;
   margin: 0 auto;
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding-top: 68px;
+  padding-bottom: 110px;
+  padding-left: 3px;
 }
 
 .filter h2 {
@@ -886,6 +920,10 @@ h3 {
   font-size: inherit;
 }
 
+.filter-grid {
+  padding-top: 24px;
+}
+
 .filter-range-title {
   color: var(--basic-headings);
   font-size: 18px;
@@ -903,6 +941,14 @@ h3 {
   font-size: 16px;
   line-height: 20px;
   list-style: none;
+}
+
+.filter-radio {
+  margin-top: -5px;
+}
+
+.filter-checkbox {
+  margin-top: -2px;
 }
 
 .sorting a:nth-child(4) {
@@ -937,6 +983,10 @@ h3 {
   margin: 0;
   margin-bottom: 30px;
   border: none;
+}
+
+.radio-checkbox button {
+  margin-top: 4px;
 }
 
 .filter-option label {
@@ -1016,6 +1066,7 @@ h3 {
 }
 
 .patterns {
+  margin-left: 42px;
 }
 
 .patterns h2 {
@@ -1032,7 +1083,11 @@ h3 {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.patterns-list li {
+  margin-bottom: -5px;
 }
 
 .pattern {
@@ -1150,11 +1205,6 @@ h3 {
   border: 3px solid #DBDBDB;
   box-sizing: border-box;
 }
-
-/*.page-active {
-  border: 2px;
-  border-color: var(--basic-background);
-}*/
 
 .form {
   width: 1157px;
